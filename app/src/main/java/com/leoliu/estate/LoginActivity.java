@@ -2,10 +2,12 @@ package com.leoliu.estate;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
@@ -14,10 +16,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -52,12 +57,14 @@ public class LoginActivity extends AppCompatActivity {
     private boolean IsLoop = true;
     private Thread thread;
     private ProgressDialog Loadingdialog;
+
+    private Handler mHandlerCtrl = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-
+        EzNetWork.onCreate(this,TAG);
 
         // 抓uuid
         // http://blog.mosil.biz/2014/05/android-device-id-uuid/#randomUUID
@@ -81,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                 IsLoop = true;
                 AccountStr = EditAccount.getText().toString();
                 PasswordStr = EditPassword.getText().toString();
-                Loadingdialog = ProgressDialog.show(LoginActivity.this, "登錄中", "請等待3秒...",true);
+                Loadingdialog = ProgressDialog.show(LoginActivity.this, "登錄中", "請耐心等待3秒...",true);
                 //HttpPost httpRequest = new HttpPost("http://13.113.26.157:3000/MblieLogin");
 
                 //HttpPost httpRequest = new HttpPost("http://13.113.26.157:3000/MblieLogin");
@@ -93,13 +100,25 @@ public class LoginActivity extends AppCompatActivity {
                         while(IsLoop){
                             try{
 
+                                // 登入中
+                                EzNetWork.Url =  "http://52.196.121.132:3000/";
+                                String ret = EzNetWork.SenCmd( NET_CMD.NET_CMD_LOGIN, "UID=1&Account=cat111&PassWord=1234");
+                                Log.d(TAG, "excutePost str=" + ret);
 
-                                String str = excutePost("http://13.113.26.157:3000/MblieLogin", "UID=22");
-                                Log.d(TAG, "excutePost str=" + str);
+                                int Code = new JSONObject(ret).getInt("Code");
+                                if( Code == 0 )
+                                {
+                                    Message msg = new Message();
+                                    msg.what = 1;
+                                    mHandler.sendMessage(msg);
+                                }
+                                else
+                                {
+                                    Message msg = new Message();
+                                    msg.what = 0;
+                                    mHandler.sendMessage(msg);
+                                }
 
-                                Message msg = new Message();
-                                msg.what = 1;
-                                mHandler.sendMessage(msg);
 
                                 IsLoop = false;
                                 Loadingdialog.dismiss();
@@ -107,6 +126,11 @@ public class LoginActivity extends AppCompatActivity {
                             }
                             catch(Exception e){
                                 e.printStackTrace();
+                                IsLoop = false;
+                                Loadingdialog.dismiss();
+                                Message msg = new Message();
+                                msg.what = 0;
+                                mHandler.sendMessage(msg);
                                 Log.d(TAG, "Exception=" + e.toString());
                             }
                         }
@@ -135,20 +159,46 @@ public class LoginActivity extends AppCompatActivity {
         }
     };
 */
+
+    // http://rx1226.pixnet.net/blog/post/305873256-%5Bandroid%5D-10-1-%E5%9F%BA%E7%A4%8Edialog
+    private void setAlertDialog1Event( String Message ){
+
+        AlertDialog.Builder builder = new AlertDialog.Builder( LoginActivity.this);
+
+        builder.setTitle("錯誤");
+        builder.setMessage(Message);
+        builder.setPositiveButton("關閉", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
     private Handler mHandler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             Log.d(TAG, "handleMessage msg=" + msg);
             switch(msg.what){
+                case 0:
+
+                    setAlertDialog1Event("登入錯誤");
+                    break;
                 case 1:
 
                     GotoMainMenu();
+                    break;
+
+                default:
+                    Log.d(TAG, " 未處理的 msg=" + msg);
                     break;
             }
         }
     };
 
-
+/*
     public static String excutePost(String targetURL, String urlParameters) {
         URL url;
         HttpURLConnection conn = null;
@@ -209,7 +259,7 @@ public class LoginActivity extends AppCompatActivity {
                 conn.disconnect();
             }
         }
-    }
+    }*/
     @Override
     public void onStart() {
         super.onStart();

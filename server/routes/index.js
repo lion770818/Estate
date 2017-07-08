@@ -8,6 +8,7 @@ var util 		= require('util');
 var async 		= require('async');  
 var libmysql 	= require('./libmysql');  	// 自己做的mysql模組
 
+var Count = 0;
 
 var log4js = require('log4js');
 log4js.configure({
@@ -295,7 +296,7 @@ exports.MblieGetMember = function(req, res){
 //==============================================================================================
 //執行手機 開始Spin
 exports.MblieStartSpin = function(req, res){
-	logger.info('MblieStartSpin 進來...');
+	logger.info('MblieStartSpin 進來... Count=' + Count );
 
 	var UID = req.body['UID'];
 	var ret;

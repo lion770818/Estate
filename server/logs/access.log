@@ -1,844 +1,243 @@
-[2017-06-24 04:57:01.531] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 04:57:01.531] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 04:57:01.531] [INFO] normal - ===SQL_GameLogInster TotalBet=0
-[2017-06-24 04:57:01.532] [INFO] normal - ===SQL_GameLogInster Bet=0
-[2017-06-24 04:57:01.532] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 04:57:01.532] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504340
-[2017-06-24 04:57:01.533] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 04:57:01.533] [INFO] normal - ===SQL_GameLogInster SpinResult=3
-[2017-06-24 04:57:01.534] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T20:57:01.533Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":0,"Bet":0,"Before_Game_Money":504340,"After_Game_Money":504340,"Win_Money":0,"SpinResult":3}
-[2017-06-24 04:57:01.537] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 04:57:01.537] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 04:57:01.538] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 04:57:01.538] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 04:57:01.538] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 04:57:01.539] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 04:57:01.539] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 04:57:01.540] [INFO] normal - Result=[object Object]
-[2017-06-24 04:57:01.540] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504340,"Result":1,"SpinResult":3,"TotalBet":0,"Win_Money":0}
-[2017-06-24 04:57:24.043] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 04:57:24.043] [INFO] normal - async.eachSeries
-[2017-06-24 04:57:24.044] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 04:57:24.044] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 04:57:24.045] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 04:57:24.045] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 04:57:24.047] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 04:57:24.047] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 04:57:24.047] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 04:57:24.047] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 04:57:24.048] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 04:57:24.048] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr={}
-[2017-06-24 04:57:24.048] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504340
-[2017-06-24 04:57:24.049] [INFO] normal - len=undefined
-[2017-06-24 04:57:24.050] [INFO] normal - RateTable len=9
-[2017-06-24 04:57:24.050] [INFO] normal - ###亂數=22 AwardTable=0
-[2017-06-24 04:57:24.051] [INFO] normal - ###總押注 TotalBet=0
-[2017-06-24 04:57:24.051] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504340
-[2017-06-24 04:57:24.052] [INFO] normal - ###一般計算
-[2017-06-24 04:57:24.052] [INFO] normal - ###計算之後的金額 After_Game_Money=504340 此次輸贏了=0
-[2017-06-24 04:57:24.054] [INFO] normal - SqlQuery data:update member set Game_Money=504340  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 04:57:24.057] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 04:57:24.059] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 04:57:24.059] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 04:57:24.059] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 04:57:24.060] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 04:57:24.060] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 04:57:24.060] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 04:57:24.063] [INFO] normal - ===SQL_GameLogInster TotalBet=0
-[2017-06-24 04:57:24.063] [INFO] normal - ===SQL_GameLogInster Bet=0
-[2017-06-24 04:57:24.063] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 04:57:24.064] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504340
-[2017-06-24 04:57:24.064] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 04:57:24.064] [INFO] normal - ===SQL_GameLogInster SpinResult=22
-[2017-06-24 04:57:24.065] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T20:57:24.065Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":0,"Bet":0,"Before_Game_Money":504340,"After_Game_Money":504340,"Win_Money":0,"SpinResult":22}
-[2017-06-24 04:57:24.066] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 04:57:24.066] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 04:57:24.067] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 04:57:24.067] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 04:57:24.067] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 04:57:24.067] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 04:57:24.068] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 04:57:24.068] [INFO] normal - Result=[object Object]
-[2017-06-24 04:57:24.068] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504340,"Result":1,"SpinResult":22,"TotalBet":0,"Win_Money":0}
-[2017-06-24 04:59:51.721] [INFO] normal - MblieLogin 進來...
-[2017-06-24 04:59:51.722] [INFO] normal - UID=undefined
-[2017-06-24 04:59:51.722] [INFO] normal - LoginState=undefined
-[2017-06-24 04:59:51.722] [INFO] normal - 給他初始化 LoginState=1
-[2017-06-24 04:59:51.723] [INFO] normal - async.eachSeries
-[2017-06-24 04:59:51.723] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 04:59:51.723] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=5
-[2017-06-24 04:59:51.724] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
-[2017-06-24 04:59:51.724] [INFO] normal - MblieLogin 離開等待async結果...
-[2017-06-24 04:59:51.725] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 04:59:51.726] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 04:59:51.726] [INFO] normal - ===PlayerInfoUpdateScore Account=cat111
-[2017-06-24 04:59:51.726] [INFO] normal - ===PlayerInfoUpdateScore PassWord=1234
-[2017-06-24 04:59:51.727] [INFO] normal - SqlQuery data:update member set LoginState=1  where Account="cat111" AND PassWord="1234" ;
-[2017-06-24 04:59:51.729] [INFO] normal - PlayerInfoUpdateScore 資料成功 mysql return data:[object Object]
-[2017-06-24 04:59:51.729] [INFO] normal - ===async.finish
-[2017-06-24 04:59:51.730] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 04:59:51.731] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 04:59:51.731] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=5
-[2017-06-24 04:59:51.732] [INFO] normal - ===AnalysisResult UID=undefined Account=cat111 err=0
-[2017-06-24 04:59:51.732] [INFO] normal - Result=[object Object]
-[2017-06-24 04:59:51.732] [INFO] normal - MblieLogin DTO_Response:{"Code":0,"Message":"成功完成登入步驟","UID":1,"Account":"cat111","Data":[{"id":40,"UID":1,"UUID":null,"Platform":35,"LoginState":1,"LoginTime":null,"CreateTime":"2017-06-22T17:00:53.000Z","UpdateTime":null,"Name":"劉智明1","Account":"cat111","PassWord":"1234","IdentityNumber":"F1002001","Address":"台灣","PhoneNumber":"0955645161","Salary":100,"Bonus":0,"Game_Money":504340}],"Game_Money":504340}
-[2017-06-24 05:00:01.792] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:00:01.793] [INFO] normal - async.eachSeries
-[2017-06-24 05:00:01.793] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:00:01.794] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:00:01.794] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:00:01.795] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:00:01.797] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:00:01.797] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:00:01.797] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:00:01.797] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:00:01.797] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:00:01.798] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr={}
-[2017-06-24 05:00:01.798] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504340
-[2017-06-24 05:00:01.798] [INFO] normal - len=undefined
-[2017-06-24 05:00:01.799] [INFO] normal - RateTable len=9
-[2017-06-24 05:00:01.799] [INFO] normal - ###亂數=4 AwardTable=0
-[2017-06-24 05:00:01.799] [INFO] normal - ###總押注 TotalBet=0
-[2017-06-24 05:00:01.799] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504340
-[2017-06-24 05:00:01.800] [INFO] normal - ###一般計算
-[2017-06-24 05:00:01.800] [INFO] normal - ###計算之後的金額 After_Game_Money=504340 此次輸贏了=0
-[2017-06-24 05:00:01.801] [INFO] normal - SqlQuery data:update member set Game_Money=504340  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:00:01.807] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:00:01.812] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:00:01.813] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:00:01.814] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:00:01.815] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:00:01.815] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:00:01.815] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:00:01.816] [INFO] normal - ===SQL_GameLogInster TotalBet=0
-[2017-06-24 05:00:01.816] [INFO] normal - ===SQL_GameLogInster Bet=0
-[2017-06-24 05:00:01.816] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 05:00:01.816] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504340
-[2017-06-24 05:00:01.817] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 05:00:01.817] [INFO] normal - ===SQL_GameLogInster SpinResult=4
-[2017-06-24 05:00:01.818] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:00:01.818Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":0,"Bet":0,"Before_Game_Money":504340,"After_Game_Money":504340,"Win_Money":0,"SpinResult":4}
-[2017-06-24 05:00:01.820] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:00:01.822] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:00:01.822] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:00:01.822] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:00:01.823] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:00:01.823] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:00:01.823] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:00:01.824] [INFO] normal - Result=[object Object]
-[2017-06-24 05:00:01.824] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504340,"Result":1,"SpinResult":4,"TotalBet":0,"Win_Money":0}
-[2017-06-24 05:02:19.902] [INFO] normal - MblieLogin 進來...
-[2017-06-24 05:02:19.903] [INFO] normal - UID=undefined
-[2017-06-24 05:02:19.904] [INFO] normal - LoginState=undefined
-[2017-06-24 05:02:19.904] [INFO] normal - 給他初始化 LoginState=1
-[2017-06-24 05:02:19.905] [INFO] normal - async.eachSeries
-[2017-06-24 05:02:19.906] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:02:19.906] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=5
-[2017-06-24 05:02:19.907] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
-[2017-06-24 05:02:19.907] [INFO] normal - MblieLogin 離開等待async結果...
-[2017-06-24 05:02:19.908] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:02:19.908] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:02:19.909] [INFO] normal - ===PlayerInfoUpdateScore Account=cat111
-[2017-06-24 05:02:19.909] [INFO] normal - ===PlayerInfoUpdateScore PassWord=1234
-[2017-06-24 05:02:19.909] [INFO] normal - SqlQuery data:update member set LoginState=1  where Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:02:19.912] [INFO] normal - PlayerInfoUpdateScore 資料成功 mysql return data:[object Object]
-[2017-06-24 05:02:19.912] [INFO] normal - ===async.finish
-[2017-06-24 05:02:19.913] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:02:19.913] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:02:19.913] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=5
-[2017-06-24 05:02:19.913] [INFO] normal - ===AnalysisResult UID=undefined Account=cat111 err=0
-[2017-06-24 05:02:19.914] [INFO] normal - Result=[object Object]
-[2017-06-24 05:02:19.914] [INFO] normal - MblieLogin DTO_Response:{"Code":0,"Message":"成功完成登入步驟","UID":1,"Account":"cat111","Data":[{"id":40,"UID":1,"UUID":null,"Platform":35,"LoginState":1,"LoginTime":null,"CreateTime":"2017-06-22T17:00:53.000Z","UpdateTime":null,"Name":"劉智明1","Account":"cat111","PassWord":"1234","IdentityNumber":"F1002001","Address":"台灣","PhoneNumber":"0955645161","Salary":100,"Bonus":0,"Game_Money":504340}],"Game_Money":504340}
-[2017-06-24 05:02:25.359] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:02:25.359] [INFO] normal - async.eachSeries
-[2017-06-24 05:02:25.360] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:02:25.361] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:02:25.361] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:02:25.361] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:02:25.363] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:02:25.363] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:02:25.364] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:02:25.364] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:02:25.364] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:02:25.365] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr={}
-[2017-06-24 05:02:25.365] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504340
-[2017-06-24 05:02:25.365] [INFO] normal - len=undefined
-[2017-06-24 05:02:25.365] [INFO] normal - RateTable len=9
-[2017-06-24 05:02:25.366] [INFO] normal - ###亂數=21 AwardTable=999
-[2017-06-24 05:02:25.366] [INFO] normal - ###總押注 TotalBet=0
-[2017-06-24 05:02:25.367] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504340
-[2017-06-24 05:02:25.367] [INFO] normal - ###一般計算
-[2017-06-24 05:02:25.367] [INFO] normal - ###計算之後的金額 After_Game_Money=504340 此次輸贏了=0
-[2017-06-24 05:02:25.369] [INFO] normal - SqlQuery data:update member set Game_Money=504340  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:02:25.373] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:02:25.374] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:02:25.374] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:02:25.374] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:02:25.374] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:02:25.375] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:02:25.375] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:02:25.375] [INFO] normal - ===SQL_GameLogInster TotalBet=0
-[2017-06-24 05:02:25.376] [INFO] normal - ===SQL_GameLogInster Bet=0
-[2017-06-24 05:02:25.376] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 05:02:25.376] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504340
-[2017-06-24 05:02:25.377] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 05:02:25.377] [INFO] normal - ===SQL_GameLogInster SpinResult=21
-[2017-06-24 05:02:25.377] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:02:25.377Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":0,"Bet":0,"Before_Game_Money":504340,"After_Game_Money":504340,"Win_Money":0,"SpinResult":21}
-[2017-06-24 05:02:25.380] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:02:25.380] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:02:25.381] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:02:25.381] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:02:25.381] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:02:25.381] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:02:25.382] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:02:25.382] [INFO] normal - Result=[object Object]
-[2017-06-24 05:02:25.382] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504340,"Result":1,"SpinResult":21,"TotalBet":0,"Win_Money":0}
-[2017-06-24 05:04:43.537] [INFO] normal - MblieLogin 進來...
-[2017-06-24 05:04:43.538] [INFO] normal - UID=undefined
-[2017-06-24 05:04:43.538] [INFO] normal - LoginState=undefined
-[2017-06-24 05:04:43.539] [INFO] normal - 給他初始化 LoginState=1
-[2017-06-24 05:04:43.539] [INFO] normal - async.eachSeries
-[2017-06-24 05:04:43.540] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:04:43.540] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=5
-[2017-06-24 05:04:43.540] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
-[2017-06-24 05:04:43.541] [INFO] normal - MblieLogin 離開等待async結果...
-[2017-06-24 05:04:43.541] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:04:43.541] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:04:43.542] [INFO] normal - ===PlayerInfoUpdateScore Account=cat111
-[2017-06-24 05:04:43.542] [INFO] normal - ===PlayerInfoUpdateScore PassWord=1234
-[2017-06-24 05:04:43.542] [INFO] normal - SqlQuery data:update member set LoginState=1  where Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:04:43.545] [INFO] normal - PlayerInfoUpdateScore 資料成功 mysql return data:[object Object]
-[2017-06-24 05:04:43.545] [INFO] normal - ===async.finish
-[2017-06-24 05:04:43.547] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:04:43.547] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:04:43.548] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=5
-[2017-06-24 05:04:43.548] [INFO] normal - ===AnalysisResult UID=undefined Account=cat111 err=0
-[2017-06-24 05:04:43.548] [INFO] normal - Result=[object Object]
-[2017-06-24 05:04:43.548] [INFO] normal - MblieLogin DTO_Response:{"Code":0,"Message":"成功完成登入步驟","UID":1,"Account":"cat111","Data":[{"id":40,"UID":1,"UUID":null,"Platform":35,"LoginState":1,"LoginTime":null,"CreateTime":"2017-06-22T17:00:53.000Z","UpdateTime":null,"Name":"劉智明1","Account":"cat111","PassWord":"1234","IdentityNumber":"F1002001","Address":"台灣","PhoneNumber":"0955645161","Salary":100,"Bonus":0,"Game_Money":504340}],"Game_Money":504340}
-[2017-06-24 05:04:48.332] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:04:48.332] [INFO] normal - async.eachSeries
-[2017-06-24 05:04:48.333] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:04:48.334] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:04:48.334] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:04:48.335] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:04:48.337] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:04:48.337] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:04:48.337] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:04:48.338] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:04:48.338] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:04:48.339] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr={}
-[2017-06-24 05:04:48.339] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504340
-[2017-06-24 05:04:48.339] [INFO] normal - len=undefined
-[2017-06-24 05:04:48.339] [INFO] normal - RateTable len=9
-[2017-06-24 05:04:48.340] [INFO] normal - ###亂數=20 AwardTable=8
-[2017-06-24 05:04:48.340] [INFO] normal - ###總押注 TotalBet=0
-[2017-06-24 05:04:48.341] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504340
-[2017-06-24 05:04:48.342] [INFO] normal - ###一般計算
-[2017-06-24 05:04:48.342] [INFO] normal - ###計算之後的金額 After_Game_Money=504340 此次輸贏了=0
-[2017-06-24 05:04:48.342] [INFO] normal - SqlQuery data:update member set Game_Money=504340  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:04:48.345] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:04:48.346] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:04:48.346] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:04:48.346] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:04:48.347] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:04:48.347] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:04:48.347] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:04:48.347] [INFO] normal - ===SQL_GameLogInster TotalBet=0
-[2017-06-24 05:04:48.348] [INFO] normal - ===SQL_GameLogInster Bet=0
-[2017-06-24 05:04:48.348] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 05:04:48.348] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504340
-[2017-06-24 05:04:48.348] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 05:04:48.349] [INFO] normal - ===SQL_GameLogInster SpinResult=20
-[2017-06-24 05:04:48.350] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:04:48.350Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":0,"Bet":0,"Before_Game_Money":504340,"After_Game_Money":504340,"Win_Money":0,"SpinResult":20}
-[2017-06-24 05:04:48.353] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:04:48.353] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:04:48.353] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:04:48.354] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:04:48.354] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:04:48.354] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:04:48.354] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:04:48.355] [INFO] normal - Result=[object Object]
-[2017-06-24 05:04:48.355] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504340,"Result":1,"SpinResult":20,"TotalBet":0,"Win_Money":0}
-[2017-06-24 05:16:38.062] [INFO] normal - MblieLogin 進來...
-[2017-06-24 05:16:38.063] [INFO] normal - UID=undefined
-[2017-06-24 05:16:38.063] [INFO] normal - LoginState=undefined
-[2017-06-24 05:16:38.064] [INFO] normal - 給他初始化 LoginState=1
-[2017-06-24 05:16:38.064] [INFO] normal - async.eachSeries
-[2017-06-24 05:16:38.065] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:16:38.065] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=5
-[2017-06-24 05:16:38.065] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
-[2017-06-24 05:16:38.066] [INFO] normal - MblieLogin 離開等待async結果...
-[2017-06-24 05:16:38.067] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:16:38.067] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:16:38.068] [INFO] normal - ===PlayerInfoUpdateScore Account=cat111
-[2017-06-24 05:16:38.068] [INFO] normal - ===PlayerInfoUpdateScore PassWord=1234
-[2017-06-24 05:16:38.068] [INFO] normal - SqlQuery data:update member set LoginState=1  where Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:16:38.072] [INFO] normal - PlayerInfoUpdateScore 資料成功 mysql return data:[object Object]
-[2017-06-24 05:16:38.073] [INFO] normal - ===async.finish
-[2017-06-24 05:16:38.073] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:16:38.074] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:16:38.074] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=5
-[2017-06-24 05:16:38.074] [INFO] normal - ===AnalysisResult UID=undefined Account=cat111 err=0
-[2017-06-24 05:16:38.074] [INFO] normal - Result=[object Object]
-[2017-06-24 05:16:38.075] [INFO] normal - MblieLogin DTO_Response:{"Code":0,"Message":"成功完成登入步驟","UID":1,"Account":"cat111","Data":[{"id":40,"UID":1,"UUID":null,"Platform":35,"LoginState":1,"LoginTime":null,"CreateTime":"2017-06-22T17:00:53.000Z","UpdateTime":null,"Name":"劉智明1","Account":"cat111","PassWord":"1234","IdentityNumber":"F1002001","Address":"台灣","PhoneNumber":"0955645161","Salary":100,"Bonus":0,"Game_Money":504340}],"Game_Money":504340}
-[2017-06-24 05:16:43.321] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:16:43.321] [INFO] normal - async.eachSeries
-[2017-06-24 05:16:43.322] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:16:43.322] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:16:43.323] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:16:43.323] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:16:43.324] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504340
-[2017-06-24 05:16:43.324] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:16:43.325] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:16:43.325] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:16:43.325] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:16:43.326] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,0,1,0,0,0,0,0,0]
-[2017-06-24 05:16:43.326] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504340
-[2017-06-24 05:16:43.326] [INFO] normal - len=9
-[2017-06-24 05:16:43.327] [INFO] normal - RateTable len=9
-[2017-06-24 05:16:43.327] [INFO] normal - ###亂數=11 AwardTable=8
-[2017-06-24 05:16:43.327] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:16:43.327] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:43.328] [INFO] normal - BetKind[1]=0
-[2017-06-24 05:16:43.328] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:16:43.329] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:43.329] [INFO] normal - BetKind[3]=0
-[2017-06-24 05:16:43.329] [INFO] normal - BetKind[4]=0
-[2017-06-24 05:16:43.330] [INFO] normal - BetKind[5]=0
-[2017-06-24 05:16:43.331] [INFO] normal - BetKind[6]=0
-[2017-06-24 05:16:43.331] [INFO] normal - BetKind[7]=0
-[2017-06-24 05:16:43.331] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:16:43.332] [INFO] normal - ###總押注 TotalBet=20
-[2017-06-24 05:16:43.332] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504340
-[2017-06-24 05:16:43.332] [INFO] normal - ###一般計算
-[2017-06-24 05:16:43.332] [INFO] normal - ###計算之後的金額 After_Game_Money=504320 此次輸贏了=-20
-[2017-06-24 05:16:43.333] [INFO] normal - SqlQuery data:update member set Game_Money=504320  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:16:43.336] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:16:43.336] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:16:43.337] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:16:43.337] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:16:43.337] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:16:43.337] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:16:43.338] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:16:43.338] [INFO] normal - ===SQL_GameLogInster TotalBet=20
-[2017-06-24 05:16:43.339] [INFO] normal - ===SQL_GameLogInster Bet=20
-[2017-06-24 05:16:43.339] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504340
-[2017-06-24 05:16:43.339] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504320
-[2017-06-24 05:16:43.341] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 05:16:43.342] [INFO] normal - ===SQL_GameLogInster SpinResult=11
-[2017-06-24 05:16:43.342] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:16:43.342Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":20,"Bet":20,"Before_Game_Money":504340,"After_Game_Money":504320,"Win_Money":0,"SpinResult":11}
-[2017-06-24 05:16:43.343] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:16:43.343] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:16:43.344] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:16:43.344] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:16:43.344] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:16:43.345] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:16:43.345] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:16:43.345] [INFO] normal - Result=[object Object]
-[2017-06-24 05:16:43.345] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504320,"Result":1,"SpinResult":11,"TotalBet":20,"Win_Money":0}
-[2017-06-24 05:16:56.674] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:16:56.675] [INFO] normal - async.eachSeries
-[2017-06-24 05:16:56.675] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:16:56.676] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:16:56.676] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:16:56.676] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:16:56.677] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504320
-[2017-06-24 05:16:56.677] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:16:56.677] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:16:56.678] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:16:56.678] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:16:56.678] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,1,1,1,1,1,1,0]
-[2017-06-24 05:16:56.678] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504320
-[2017-06-24 05:16:56.679] [INFO] normal - len=9
-[2017-06-24 05:16:56.679] [INFO] normal - RateTable len=9
-[2017-06-24 05:16:56.679] [INFO] normal - ###亂數=12 AwardTable=7
-[2017-06-24 05:16:56.679] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:16:56.680] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.681] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:16:56.681] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.681] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:16:56.682] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.682] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:16:56.683] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.684] [INFO] normal - BetKind[4]=1
-[2017-06-24 05:16:56.684] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.685] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:16:56.685] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.685] [INFO] normal - BetKind[6]=1
-[2017-06-24 05:16:56.686] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.686] [INFO] normal - BetKind[7]=1
-[2017-06-24 05:16:56.686] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:16:56.686] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:16:56.687] [INFO] normal - ###總押注 TotalBet=80
-[2017-06-24 05:16:56.687] [INFO] normal - ###總贏分Win_Money=10 Before_Game_Money=504320
-[2017-06-24 05:16:56.687] [INFO] normal - ###一般計算
-[2017-06-24 05:16:56.688] [INFO] normal - ###計算之後的金額 After_Game_Money=504250 此次輸贏了=-70
-[2017-06-24 05:16:56.688] [INFO] normal - SqlQuery data:update member set Game_Money=504250  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:16:56.689] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:16:56.690] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:16:56.690] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:16:56.690] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:16:56.690] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:16:56.691] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:16:56.691] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:16:56.691] [INFO] normal - ===SQL_GameLogInster TotalBet=80
-[2017-06-24 05:16:56.691] [INFO] normal - ===SQL_GameLogInster Bet=80
-[2017-06-24 05:16:56.692] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504320
-[2017-06-24 05:16:56.692] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504250
-[2017-06-24 05:16:56.694] [INFO] normal - ===SQL_GameLogInster Win_Money=10
-[2017-06-24 05:16:56.694] [INFO] normal - ===SQL_GameLogInster SpinResult=12
-[2017-06-24 05:16:56.694] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:16:56.694Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":80,"Bet":80,"Before_Game_Money":504320,"After_Game_Money":504250,"Win_Money":10,"SpinResult":12}
-[2017-06-24 05:16:56.695] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:16:56.696] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:16:56.696] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:16:56.696] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:16:56.696] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:16:56.697] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:16:56.698] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:16:56.698] [INFO] normal - Result=[object Object]
-[2017-06-24 05:16:56.698] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504250,"Result":1,"SpinResult":12,"TotalBet":80,"Win_Money":10}
-[2017-06-24 05:17:07.000] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:17:07.001] [INFO] normal - async.eachSeries
-[2017-06-24 05:17:07.002] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:17:07.002] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:17:07.002] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:17:07.003] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:17:07.003] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504250
-[2017-06-24 05:17:07.004] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:17:07.004] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:17:07.004] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:17:07.004] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:17:07.005] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,1,1,1,1,1,2,0]
-[2017-06-24 05:17:07.005] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504250
-[2017-06-24 05:17:07.005] [INFO] normal - len=9
-[2017-06-24 05:17:07.005] [INFO] normal - RateTable len=9
-[2017-06-24 05:17:07.006] [INFO] normal - ###亂數=23 AwardTable=8
-[2017-06-24 05:17:07.006] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:17:07.006] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.006] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:17:07.007] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.007] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:17:07.007] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.008] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:17:07.008] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.008] [INFO] normal - BetKind[4]=1
-[2017-06-24 05:17:07.008] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.009] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:17:07.010] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.011] [INFO] normal - BetKind[6]=1
-[2017-06-24 05:17:07.011] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:07.011] [INFO] normal - BetKind[7]=2
-[2017-06-24 05:17:07.011] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:07.012] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:17:07.012] [INFO] normal - ###總押注 TotalBet=90
-[2017-06-24 05:17:07.012] [INFO] normal - ###總贏分Win_Money=0 Before_Game_Money=504250
-[2017-06-24 05:17:07.012] [INFO] normal - ###一般計算
-[2017-06-24 05:17:07.013] [INFO] normal - ###計算之後的金額 After_Game_Money=504160 此次輸贏了=-90
-[2017-06-24 05:17:07.013] [INFO] normal - SqlQuery data:update member set Game_Money=504160  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:17:07.016] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:17:07.016] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:17:07.016] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:17:07.016] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:17:07.017] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:17:07.017] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:17:07.017] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:17:07.018] [INFO] normal - ===SQL_GameLogInster TotalBet=90
-[2017-06-24 05:17:07.018] [INFO] normal - ===SQL_GameLogInster Bet=90
-[2017-06-24 05:17:07.018] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504250
-[2017-06-24 05:17:07.018] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504160
-[2017-06-24 05:17:07.019] [INFO] normal - ===SQL_GameLogInster Win_Money=0
-[2017-06-24 05:17:07.019] [INFO] normal - ===SQL_GameLogInster SpinResult=23
-[2017-06-24 05:17:07.020] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:17:07.020Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":90,"Bet":90,"Before_Game_Money":504250,"After_Game_Money":504160,"Win_Money":0,"SpinResult":23}
-[2017-06-24 05:17:07.022] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:17:07.022] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:17:07.022] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:17:07.022] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:17:07.023] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:17:07.023] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:17:07.023] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:17:07.023] [INFO] normal - Result=[object Object]
-[2017-06-24 05:17:07.024] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504160,"Result":1,"SpinResult":23,"TotalBet":90,"Win_Money":0}
-[2017-06-24 05:17:16.714] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:17:16.715] [INFO] normal - async.eachSeries
-[2017-06-24 05:17:16.715] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:17:16.716] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:17:16.716] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:17:16.717] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:17:16.718] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504160
-[2017-06-24 05:17:16.718] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:17:16.718] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:17:16.718] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:17:16.719] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:17:16.719] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,1,1,1,1,1,2,0]
-[2017-06-24 05:17:16.719] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504160
-[2017-06-24 05:17:16.719] [INFO] normal - len=9
-[2017-06-24 05:17:16.720] [INFO] normal - RateTable len=9
-[2017-06-24 05:17:16.720] [INFO] normal - ###亂數=0 AwardTable=7
-[2017-06-24 05:17:16.720] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:17:16.721] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.721] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:17:16.721] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.721] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:17:16.722] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.722] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:17:16.722] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.723] [INFO] normal - BetKind[4]=1
-[2017-06-24 05:17:16.724] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.725] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:17:16.725] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.725] [INFO] normal - BetKind[6]=1
-[2017-06-24 05:17:16.725] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:16.726] [INFO] normal - BetKind[7]=2
-[2017-06-24 05:17:16.726] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:16.726] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:17:16.726] [INFO] normal - ###總押注 TotalBet=90
-[2017-06-24 05:17:16.727] [INFO] normal - ###總贏分Win_Money=20 Before_Game_Money=504160
-[2017-06-24 05:17:16.727] [INFO] normal - ###一般計算
-[2017-06-24 05:17:16.727] [INFO] normal - ###計算之後的金額 After_Game_Money=504090 此次輸贏了=-70
-[2017-06-24 05:17:16.727] [INFO] normal - SqlQuery data:update member set Game_Money=504090  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:17:16.730] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:17:16.730] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:17:16.730] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:17:16.731] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:17:16.731] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:17:16.731] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:17:16.731] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:17:16.732] [INFO] normal - ===SQL_GameLogInster TotalBet=90
-[2017-06-24 05:17:16.732] [INFO] normal - ===SQL_GameLogInster Bet=90
-[2017-06-24 05:17:16.732] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504160
-[2017-06-24 05:17:16.733] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504090
-[2017-06-24 05:17:16.734] [INFO] normal - ===SQL_GameLogInster Win_Money=20
-[2017-06-24 05:17:16.734] [INFO] normal - ===SQL_GameLogInster SpinResult=0
-[2017-06-24 05:17:16.735] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:17:16.735Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":90,"Bet":90,"Before_Game_Money":504160,"After_Game_Money":504090,"Win_Money":20,"SpinResult":0}
-[2017-06-24 05:17:16.736] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:17:16.736] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:17:16.736] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:17:16.737] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:17:16.737] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:17:16.737] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:17:16.738] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:17:16.738] [INFO] normal - Result=[object Object]
-[2017-06-24 05:17:16.738] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504090,"Result":1,"SpinResult":0,"TotalBet":90,"Win_Money":20}
-[2017-06-24 05:17:26.618] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:17:26.619] [INFO] normal - async.eachSeries
-[2017-06-24 05:17:26.619] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:17:26.619] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:17:26.620] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:17:26.621] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:17:26.621] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504090
-[2017-06-24 05:17:26.621] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:17:26.622] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:17:26.622] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:17:26.622] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:17:26.623] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,1,1,1,1,1,2,0]
-[2017-06-24 05:17:26.623] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504090
-[2017-06-24 05:17:26.623] [INFO] normal - len=9
-[2017-06-24 05:17:26.624] [INFO] normal - RateTable len=9
-[2017-06-24 05:17:26.624] [INFO] normal - ###亂數=6 AwardTable=6
-[2017-06-24 05:17:26.624] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:17:26.624] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.625] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:17:26.625] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.625] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:17:26.625] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.626] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:17:26.626] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.626] [INFO] normal - BetKind[4]=1
-[2017-06-24 05:17:26.626] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.628] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:17:26.628] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.628] [INFO] normal - BetKind[6]=1
-[2017-06-24 05:17:26.629] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:26.629] [INFO] normal - BetKind[7]=2
-[2017-06-24 05:17:26.629] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:26.629] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:17:26.630] [INFO] normal - ###總押注 TotalBet=90
-[2017-06-24 05:17:26.630] [INFO] normal - ###總贏分Win_Money=10 Before_Game_Money=504090
-[2017-06-24 05:17:26.630] [INFO] normal - ###一般計算
-[2017-06-24 05:17:26.631] [INFO] normal - ###計算之後的金額 After_Game_Money=504010 此次輸贏了=-80
-[2017-06-24 05:17:26.631] [INFO] normal - SqlQuery data:update member set Game_Money=504010  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:17:26.635] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:17:26.635] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:17:26.636] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:17:26.637] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:17:26.638] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:17:26.638] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:17:26.638] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:17:26.639] [INFO] normal - ===SQL_GameLogInster TotalBet=90
-[2017-06-24 05:17:26.639] [INFO] normal - ===SQL_GameLogInster Bet=90
-[2017-06-24 05:17:26.639] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504090
-[2017-06-24 05:17:26.639] [INFO] normal - ===SQL_GameLogInster After_Game_Money=504010
-[2017-06-24 05:17:26.640] [INFO] normal - ===SQL_GameLogInster Win_Money=10
-[2017-06-24 05:17:26.640] [INFO] normal - ===SQL_GameLogInster SpinResult=6
-[2017-06-24 05:17:26.640] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:17:26.640Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":90,"Bet":90,"Before_Game_Money":504090,"After_Game_Money":504010,"Win_Money":10,"SpinResult":6}
-[2017-06-24 05:17:26.641] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:17:26.641] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:17:26.642] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:17:26.642] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:17:26.642] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:17:26.643] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:17:26.643] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:17:26.643] [INFO] normal - Result=[object Object]
-[2017-06-24 05:17:26.643] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":504010,"Result":1,"SpinResult":6,"TotalBet":90,"Win_Money":10}
-[2017-06-24 05:17:36.985] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:17:36.986] [INFO] normal - async.eachSeries
-[2017-06-24 05:17:36.987] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:17:36.988] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:17:36.988] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:17:36.989] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:17:36.989] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=504010
-[2017-06-24 05:17:36.990] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:17:36.990] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:17:36.990] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:17:36.991] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:17:36.991] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,1,1,1,1,1,2,0]
-[2017-06-24 05:17:36.991] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=504010
-[2017-06-24 05:17:36.992] [INFO] normal - len=9
-[2017-06-24 05:17:36.992] [INFO] normal - RateTable len=9
-[2017-06-24 05:17:36.992] [INFO] normal - ###亂數=15 AwardTable=3
-[2017-06-24 05:17:36.992] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:17:36.992] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.993] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:17:36.993] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.993] [INFO] normal - BetKind[2]=1
-[2017-06-24 05:17:36.993] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.994] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:17:36.995] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.996] [INFO] normal - BetKind[4]=1
-[2017-06-24 05:17:36.996] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.996] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:17:36.996] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.996] [INFO] normal - BetKind[6]=1
-[2017-06-24 05:17:36.997] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:36.997] [INFO] normal - BetKind[7]=2
-[2017-06-24 05:17:36.997] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:36.997] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:17:36.998] [INFO] normal - ###總押注 TotalBet=90
-[2017-06-24 05:17:36.998] [INFO] normal - ###總贏分Win_Money=10 Before_Game_Money=504010
-[2017-06-24 05:17:36.998] [INFO] normal - ###一般計算
-[2017-06-24 05:17:36.999] [INFO] normal - ###計算之後的金額 After_Game_Money=503930 此次輸贏了=-80
-[2017-06-24 05:17:36.999] [INFO] normal - SqlQuery data:update member set Game_Money=503930  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:17:37.003] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:17:37.003] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:17:37.003] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:17:37.005] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:17:37.005] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:17:37.005] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:17:37.006] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:17:37.006] [INFO] normal - ===SQL_GameLogInster TotalBet=90
-[2017-06-24 05:17:37.006] [INFO] normal - ===SQL_GameLogInster Bet=90
-[2017-06-24 05:17:37.007] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=504010
-[2017-06-24 05:17:37.007] [INFO] normal - ===SQL_GameLogInster After_Game_Money=503930
-[2017-06-24 05:17:37.007] [INFO] normal - ===SQL_GameLogInster Win_Money=10
-[2017-06-24 05:17:37.007] [INFO] normal - ===SQL_GameLogInster SpinResult=15
-[2017-06-24 05:17:37.008] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:17:37.008Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":90,"Bet":90,"Before_Game_Money":504010,"After_Game_Money":503930,"Win_Money":10,"SpinResult":15}
-[2017-06-24 05:17:37.009] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:17:37.009] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:17:37.009] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:17:37.009] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:17:37.010] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:17:37.010] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:17:37.010] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:17:37.011] [INFO] normal - Result=[object Object]
-[2017-06-24 05:17:37.011] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":503930,"Result":1,"SpinResult":15,"TotalBet":90,"Win_Money":10}
-[2017-06-24 05:17:46.798] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:17:46.799] [INFO] normal - async.eachSeries
-[2017-06-24 05:17:46.800] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:17:46.800] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:17:46.801] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:17:46.801] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:17:46.802] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=503930
-[2017-06-24 05:17:46.802] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:17:46.802] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:17:46.803] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:17:46.803] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:17:46.803] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,1,2,1,3,1,3,2,0]
-[2017-06-24 05:17:46.803] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=503930
-[2017-06-24 05:17:46.804] [INFO] normal - len=9
-[2017-06-24 05:17:46.804] [INFO] normal - RateTable len=9
-[2017-06-24 05:17:46.804] [INFO] normal - ###亂數=22 AwardTable=0
-[2017-06-24 05:17:46.804] [INFO] normal - BetKind[0]=1
-[2017-06-24 05:17:46.805] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:46.805] [INFO] normal - BetKind[1]=1
-[2017-06-24 05:17:46.805] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:46.805] [INFO] normal - BetKind[2]=2
-[2017-06-24 05:17:46.806] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:46.806] [INFO] normal - BetKind[3]=1
-[2017-06-24 05:17:46.806] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:46.806] [INFO] normal - BetKind[4]=3
-[2017-06-24 05:17:46.806] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:17:46.807] [INFO] normal - BetKind[5]=1
-[2017-06-24 05:17:46.807] [INFO] normal - 有押注 該注為=1
-[2017-06-24 05:17:46.809] [INFO] normal - BetKind[6]=3
-[2017-06-24 05:17:46.809] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:17:46.809] [INFO] normal - BetKind[7]=2
-[2017-06-24 05:17:46.809] [INFO] normal - 有押注 該注為=2
-[2017-06-24 05:17:46.810] [INFO] normal - BetKind[8]=0
-[2017-06-24 05:17:46.810] [INFO] normal - ###總押注 TotalBet=140
-[2017-06-24 05:17:46.810] [INFO] normal - ###總贏分Win_Money=10 Before_Game_Money=503930
-[2017-06-24 05:17:46.811] [INFO] normal - ###一般計算
-[2017-06-24 05:17:46.811] [INFO] normal - ###計算之後的金額 After_Game_Money=503800 此次輸贏了=-130
-[2017-06-24 05:17:46.811] [INFO] normal - SqlQuery data:update member set Game_Money=503800  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:17:46.813] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:17:46.813] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:17:46.813] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:17:46.814] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:17:46.814] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:17:46.814] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:17:46.814] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:17:46.814] [INFO] normal - ===SQL_GameLogInster TotalBet=140
-[2017-06-24 05:17:46.815] [INFO] normal - ===SQL_GameLogInster Bet=140
-[2017-06-24 05:17:46.815] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=503930
-[2017-06-24 05:17:46.815] [INFO] normal - ===SQL_GameLogInster After_Game_Money=503800
-[2017-06-24 05:17:46.815] [INFO] normal - ===SQL_GameLogInster Win_Money=10
-[2017-06-24 05:17:46.816] [INFO] normal - ===SQL_GameLogInster SpinResult=22
-[2017-06-24 05:17:46.816] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:17:46.816Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":140,"Bet":140,"Before_Game_Money":503930,"After_Game_Money":503800,"Win_Money":10,"SpinResult":22}
-[2017-06-24 05:17:46.817] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:17:46.819] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:17:46.819] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:17:46.819] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:17:46.820] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:17:46.820] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:17:46.820] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:17:46.821] [INFO] normal - Result=[object Object]
-[2017-06-24 05:17:46.821] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":503800,"Result":1,"SpinResult":22,"TotalBet":140,"Win_Money":10}
-[2017-06-24 05:18:04.978] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:18:04.979] [INFO] normal - async.eachSeries
-[2017-06-24 05:18:04.980] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:18:04.980] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:18:04.981] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:18:04.981] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:18:04.982] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=503800
-[2017-06-24 05:18:04.982] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:18:04.982] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:18:04.982] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:18:04.982] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:18:04.983] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[6,13,8,3,5,3,4,4,5]
-[2017-06-24 05:18:04.983] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=503800
-[2017-06-24 05:18:04.983] [INFO] normal - len=9
-[2017-06-24 05:18:04.984] [INFO] normal - RateTable len=9
-[2017-06-24 05:18:04.984] [INFO] normal - ###亂數=5 AwardTable=8
-[2017-06-24 05:18:04.984] [INFO] normal - BetKind[0]=6
-[2017-06-24 05:18:04.984] [INFO] normal - 有押注 該注為=6
-[2017-06-24 05:18:04.984] [INFO] normal - BetKind[1]=13
-[2017-06-24 05:18:04.985] [INFO] normal - 有押注 該注為=13
-[2017-06-24 05:18:04.985] [INFO] normal - BetKind[2]=8
-[2017-06-24 05:18:04.985] [INFO] normal - 有押注 該注為=8
-[2017-06-24 05:18:04.985] [INFO] normal - BetKind[3]=3
-[2017-06-24 05:18:04.986] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:18:04.986] [INFO] normal - BetKind[4]=5
-[2017-06-24 05:18:04.986] [INFO] normal - 有押注 該注為=5
-[2017-06-24 05:18:04.986] [INFO] normal - BetKind[5]=3
-[2017-06-24 05:18:04.987] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:18:04.988] [INFO] normal - BetKind[6]=4
-[2017-06-24 05:18:04.989] [INFO] normal - 有押注 該注為=4
-[2017-06-24 05:18:04.989] [INFO] normal - BetKind[7]=4
-[2017-06-24 05:18:04.989] [INFO] normal - 有押注 該注為=4
-[2017-06-24 05:18:04.989] [INFO] normal - BetKind[8]=5
-[2017-06-24 05:18:04.990] [INFO] normal - 有押注 該注為=5
-[2017-06-24 05:18:04.990] [INFO] normal - ###總押注 TotalBet=510
-[2017-06-24 05:18:04.990] [INFO] normal - ###總贏分Win_Money=50 Before_Game_Money=503800
-[2017-06-24 05:18:04.990] [INFO] normal - ###一般計算
-[2017-06-24 05:18:04.991] [INFO] normal - ###計算之後的金額 After_Game_Money=503340 此次輸贏了=-460
-[2017-06-24 05:18:04.991] [INFO] normal - SqlQuery data:update member set Game_Money=503340  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:18:04.993] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:18:04.994] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:18:04.994] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:18:04.994] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:18:04.995] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:18:04.995] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:18:04.995] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:18:04.996] [INFO] normal - ===SQL_GameLogInster TotalBet=510
-[2017-06-24 05:18:04.997] [INFO] normal - ===SQL_GameLogInster Bet=510
-[2017-06-24 05:18:04.998] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=503800
-[2017-06-24 05:18:04.998] [INFO] normal - ===SQL_GameLogInster After_Game_Money=503340
-[2017-06-24 05:18:04.998] [INFO] normal - ===SQL_GameLogInster Win_Money=50
-[2017-06-24 05:18:04.999] [INFO] normal - ===SQL_GameLogInster SpinResult=5
-[2017-06-24 05:18:04.999] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:18:04.999Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":510,"Bet":510,"Before_Game_Money":503800,"After_Game_Money":503340,"Win_Money":50,"SpinResult":5}
-[2017-06-24 05:18:05.000] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:18:05.000] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:18:05.001] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:18:05.001] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:18:05.001] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:18:05.001] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:18:05.002] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:18:05.002] [INFO] normal - Result=[object Object]
-[2017-06-24 05:18:05.002] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":503340,"Result":1,"SpinResult":5,"TotalBet":510,"Win_Money":50}
-[2017-06-24 05:18:15.686] [INFO] normal - MblieStartSpin 進來...
-[2017-06-24 05:18:15.687] [INFO] normal - async.eachSeries
-[2017-06-24 05:18:15.687] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:18:15.688] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
-[2017-06-24 05:18:15.688] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
-[2017-06-24 05:18:15.689] [INFO] normal - MblieStartSpin 離開等待async結果...
-[2017-06-24 05:18:15.691] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=503340
-[2017-06-24 05:18:15.691] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
-[2017-06-24 05:18:15.692] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
-[2017-06-24 05:18:15.692] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
-[2017-06-24 05:18:15.692] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
-[2017-06-24 05:18:15.693] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[6,13,8,3,5,3,4,4,5]
-[2017-06-24 05:18:15.693] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=503340
-[2017-06-24 05:18:15.693] [INFO] normal - len=9
-[2017-06-24 05:18:15.693] [INFO] normal - RateTable len=9
-[2017-06-24 05:18:15.694] [INFO] normal - ###亂數=7 AwardTable=1
-[2017-06-24 05:18:15.694] [INFO] normal - BetKind[0]=6
-[2017-06-24 05:18:15.694] [INFO] normal - 有押注 該注為=6
-[2017-06-24 05:18:15.694] [INFO] normal - BetKind[1]=13
-[2017-06-24 05:18:15.696] [INFO] normal - 有押注 該注為=13
-[2017-06-24 05:18:15.696] [INFO] normal - BetKind[2]=8
-[2017-06-24 05:18:15.696] [INFO] normal - 有押注 該注為=8
-[2017-06-24 05:18:15.696] [INFO] normal - BetKind[3]=3
-[2017-06-24 05:18:15.697] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:18:15.697] [INFO] normal - BetKind[4]=5
-[2017-06-24 05:18:15.697] [INFO] normal - 有押注 該注為=5
-[2017-06-24 05:18:15.697] [INFO] normal - BetKind[5]=3
-[2017-06-24 05:18:15.698] [INFO] normal - 有押注 該注為=3
-[2017-06-24 05:18:15.698] [INFO] normal - BetKind[6]=4
-[2017-06-24 05:18:15.698] [INFO] normal - 有押注 該注為=4
-[2017-06-24 05:18:15.698] [INFO] normal - BetKind[7]=4
-[2017-06-24 05:18:15.699] [INFO] normal - 有押注 該注為=4
-[2017-06-24 05:18:15.699] [INFO] normal - BetKind[8]=5
-[2017-06-24 05:18:15.699] [INFO] normal - 有押注 該注為=5
-[2017-06-24 05:18:15.700] [INFO] normal - ###總押注 TotalBet=510
-[2017-06-24 05:18:15.700] [INFO] normal - ###總贏分Win_Money=130 Before_Game_Money=503340
-[2017-06-24 05:18:15.700] [INFO] normal - ###一般計算
-[2017-06-24 05:18:15.701] [INFO] normal - ###計算之後的金額 After_Game_Money=502960 此次輸贏了=-380
-[2017-06-24 05:18:15.701] [INFO] normal - SqlQuery data:update member set Game_Money=502960  where UID=1 AND Account="cat111" AND PassWord="1234" ;
-[2017-06-24 05:18:15.704] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
-[2017-06-24 05:18:15.705] [INFO] normal - ===SQL_GameLogInster Status=8
-[2017-06-24 05:18:15.706] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
-[2017-06-24 05:18:15.706] [INFO] normal - ===SQL_GameLogInster Platform=1
-[2017-06-24 05:18:15.707] [INFO] normal - ===SQL_GameLogInster UID=1
-[2017-06-24 05:18:15.707] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
-[2017-06-24 05:18:15.707] [INFO] normal - ===SQL_GameLogInster Account=cat111
-[2017-06-24 05:18:15.708] [INFO] normal - ===SQL_GameLogInster TotalBet=510
-[2017-06-24 05:18:15.708] [INFO] normal - ===SQL_GameLogInster Bet=510
-[2017-06-24 05:18:15.708] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=503340
-[2017-06-24 05:18:15.708] [INFO] normal - ===SQL_GameLogInster After_Game_Money=502960
-[2017-06-24 05:18:15.709] [INFO] normal - ===SQL_GameLogInster Win_Money=130
-[2017-06-24 05:18:15.709] [INFO] normal - ===SQL_GameLogInster SpinResult=7
-[2017-06-24 05:18:15.709] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-06-23T21:18:15.709Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":510,"Bet":510,"Before_Game_Money":503340,"After_Game_Money":502960,"Win_Money":130,"SpinResult":7}
-[2017-06-24 05:18:15.711] [INFO] normal - SQL_GameLogInster 寫入資料成功！
-[2017-06-24 05:18:15.711] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
-[2017-06-24 05:18:15.711] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:18:15.711] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
-[2017-06-24 05:18:15.712] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
-[2017-06-24 05:18:15.712] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
-[2017-06-24 05:18:15.712] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
-[2017-06-24 05:18:15.712] [INFO] normal - Result=[object Object]
-[2017-06-24 05:18:15.713] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":502960,"Result":1,"SpinResult":7,"TotalBet":510,"Win_Money":130}
-[2017-06-24 05:48:11.086] [INFO] normal - MblieLogin 進來...
-[2017-06-24 05:48:11.087] [INFO] normal - UID=undefined
-[2017-06-24 05:48:11.088] [INFO] normal - LoginState=undefined
-[2017-06-24 05:48:11.088] [INFO] normal - 給他初始化 LoginState=1
-[2017-06-24 05:48:11.088] [INFO] normal - async.eachSeries
-[2017-06-24 05:48:11.089] [INFO] normal - async.func1 傳遞參數用
-[2017-06-24 05:48:11.089] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=5
-[2017-06-24 05:48:11.089] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat222' AND PassWord='1234';
-[2017-06-24 05:48:11.091] [INFO] normal - MblieLogin 離開等待async結果...
-[2017-06-24 05:48:11.092] [INFO] normal - 沒找到 結束步驟 Account:cat222
-[2017-06-24 05:48:11.092] [INFO] normal - ===async.finish
-[2017-06-24 05:48:11.092] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=-5
-[2017-06-24 05:48:11.093] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
-[2017-06-24 05:48:11.093] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=5
-[2017-06-24 05:48:11.094] [INFO] normal - ===AnalysisResult UID=undefined Account=cat222 err=-5
-[2017-06-24 05:48:11.094] [INFO] normal - Result=[object Object]
-[2017-06-24 05:48:11.094] [INFO] normal - MblieLogin DTO_Response:{"Code":-5,"Message":"找不到會員","Account":"cat222","Data":[]}
+[2017-07-05 23:06:06.107] [INFO] normal - BetKind[6]=7
+[2017-07-05 23:06:06.108] [INFO] normal - 有押注 該注為=7
+[2017-07-05 23:06:06.108] [INFO] normal - BetKind[7]=8
+[2017-07-05 23:06:06.109] [INFO] normal - 有押注 該注為=8
+[2017-07-05 23:06:06.109] [INFO] normal - BetKind[8]=0
+[2017-07-05 23:06:06.109] [INFO] normal - ###總押注 TotalBet=360
+[2017-07-05 23:06:06.110] [INFO] normal - ###總贏分Win_Money=500 Before_Game_Money=502960
+[2017-07-05 23:06:06.110] [INFO] normal - ###一般計算
+[2017-07-05 23:06:06.110] [INFO] normal - ###計算之後的金額 After_Game_Money=503100 此次輸贏了=140
+[2017-07-05 23:06:06.111] [INFO] normal - SqlQuery data:update member set Game_Money=503100  where UID=1 AND Account="cat111" AND PassWord="1234" ;
+[2017-07-05 23:06:06.117] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
+[2017-07-05 23:06:06.118] [INFO] normal - ===SQL_GameLogInster Status=8
+[2017-07-05 23:06:06.119] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
+[2017-07-05 23:06:06.119] [INFO] normal - ===SQL_GameLogInster Platform=1
+[2017-07-05 23:06:06.119] [INFO] normal - ===SQL_GameLogInster UID=1
+[2017-07-05 23:06:06.119] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
+[2017-07-05 23:06:06.120] [INFO] normal - ===SQL_GameLogInster Account=cat111
+[2017-07-05 23:06:06.120] [INFO] normal - ===SQL_GameLogInster TotalBet=360
+[2017-07-05 23:06:06.121] [INFO] normal - ===SQL_GameLogInster Bet=360
+[2017-07-05 23:06:06.121] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=502960
+[2017-07-05 23:06:06.122] [INFO] normal - ===SQL_GameLogInster After_Game_Money=503100
+[2017-07-05 23:06:06.122] [INFO] normal - ===SQL_GameLogInster Win_Money=500
+[2017-07-05 23:06:06.122] [INFO] normal - ===SQL_GameLogInster SpinResult=3
+[2017-07-05 23:06:06.124] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-07-05T15:06:06.123Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":360,"Bet":360,"Before_Game_Money":502960,"After_Game_Money":503100,"Win_Money":500,"SpinResult":3}
+[2017-07-05 23:06:06.128] [INFO] normal - SQL_GameLogInster 寫入資料成功！
+[2017-07-05 23:06:06.128] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
+[2017-07-05 23:06:06.129] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:06:06.129] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
+[2017-07-05 23:06:06.129] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
+[2017-07-05 23:06:06.130] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
+[2017-07-05 23:06:06.130] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
+[2017-07-05 23:06:06.130] [INFO] normal - Result=[object Object]
+[2017-07-05 23:06:06.131] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":503100,"Result":1,"SpinResult":3,"TotalBet":360,"Win_Money":500}
+[2017-07-05 23:06:08.048] [INFO] normal - MblieStartSpin 進來... Count=0
+[2017-07-05 23:06:08.048] [INFO] normal - async.eachSeries
+[2017-07-05 23:06:08.049] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:06:08.049] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
+[2017-07-05 23:06:08.050] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
+[2017-07-05 23:06:08.052] [INFO] normal - MblieStartSpin 離開等待async結果...
+[2017-07-05 23:06:08.054] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=503100
+[2017-07-05 23:06:08.054] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
+[2017-07-05 23:06:08.055] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
+[2017-07-05 23:06:08.055] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
+[2017-07-05 23:06:08.055] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
+[2017-07-05 23:06:08.056] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,2,3,4,5,6,7,8,0]
+[2017-07-05 23:06:08.056] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=503100
+[2017-07-05 23:06:08.056] [INFO] normal - len=9
+[2017-07-05 23:06:08.058] [INFO] normal - RateTable len=9
+[2017-07-05 23:06:08.058] [INFO] normal - ###亂數=18 AwardTable=6
+[2017-07-05 23:06:08.059] [INFO] normal - BetKind[0]=1
+[2017-07-05 23:06:08.059] [INFO] normal - 有押注 該注為=1
+[2017-07-05 23:06:08.059] [INFO] normal - BetKind[1]=2
+[2017-07-05 23:06:08.059] [INFO] normal - 有押注 該注為=2
+[2017-07-05 23:06:08.060] [INFO] normal - BetKind[2]=3
+[2017-07-05 23:06:08.060] [INFO] normal - 有押注 該注為=3
+[2017-07-05 23:06:08.061] [INFO] normal - BetKind[3]=4
+[2017-07-05 23:06:08.061] [INFO] normal - 有押注 該注為=4
+[2017-07-05 23:06:08.061] [INFO] normal - BetKind[4]=5
+[2017-07-05 23:06:08.062] [INFO] normal - 有押注 該注為=5
+[2017-07-05 23:06:08.062] [INFO] normal - BetKind[5]=6
+[2017-07-05 23:06:08.062] [INFO] normal - 有押注 該注為=6
+[2017-07-05 23:06:08.063] [INFO] normal - BetKind[6]=7
+[2017-07-05 23:06:08.063] [INFO] normal - 有押注 該注為=7
+[2017-07-05 23:06:08.063] [INFO] normal - BetKind[7]=8
+[2017-07-05 23:06:08.064] [INFO] normal - 有押注 該注為=8
+[2017-07-05 23:06:08.064] [INFO] normal - BetKind[8]=0
+[2017-07-05 23:06:08.064] [INFO] normal - ###總押注 TotalBet=360
+[2017-07-05 23:06:08.064] [INFO] normal - ###總贏分Win_Money=70 Before_Game_Money=503100
+[2017-07-05 23:06:08.065] [INFO] normal - ###一般計算
+[2017-07-05 23:06:08.065] [INFO] normal - ###計算之後的金額 After_Game_Money=502810 此次輸贏了=-290
+[2017-07-05 23:06:08.065] [INFO] normal - SqlQuery data:update member set Game_Money=502810  where UID=1 AND Account="cat111" AND PassWord="1234" ;
+[2017-07-05 23:06:08.067] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
+[2017-07-05 23:06:08.068] [INFO] normal - ===SQL_GameLogInster Status=8
+[2017-07-05 23:06:08.068] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
+[2017-07-05 23:06:08.068] [INFO] normal - ===SQL_GameLogInster Platform=1
+[2017-07-05 23:06:08.068] [INFO] normal - ===SQL_GameLogInster UID=1
+[2017-07-05 23:06:08.069] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
+[2017-07-05 23:06:08.069] [INFO] normal - ===SQL_GameLogInster Account=cat111
+[2017-07-05 23:06:08.069] [INFO] normal - ===SQL_GameLogInster TotalBet=360
+[2017-07-05 23:06:08.070] [INFO] normal - ===SQL_GameLogInster Bet=360
+[2017-07-05 23:06:08.070] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=503100
+[2017-07-05 23:06:08.071] [INFO] normal - ===SQL_GameLogInster After_Game_Money=502810
+[2017-07-05 23:06:08.071] [INFO] normal - ===SQL_GameLogInster Win_Money=70
+[2017-07-05 23:06:08.072] [INFO] normal - ===SQL_GameLogInster SpinResult=18
+[2017-07-05 23:06:08.072] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-07-05T15:06:08.072Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":360,"Bet":360,"Before_Game_Money":503100,"After_Game_Money":502810,"Win_Money":70,"SpinResult":18}
+[2017-07-05 23:06:08.074] [INFO] normal - SQL_GameLogInster 寫入資料成功！
+[2017-07-05 23:06:08.074] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
+[2017-07-05 23:06:08.075] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:06:08.075] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
+[2017-07-05 23:06:08.075] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
+[2017-07-05 23:06:08.075] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
+[2017-07-05 23:06:08.078] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
+[2017-07-05 23:06:08.078] [INFO] normal - Result=[object Object]
+[2017-07-05 23:06:08.079] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":502810,"Result":1,"SpinResult":18,"TotalBet":360,"Win_Money":70}
+[2017-07-05 23:06:29.970] [INFO] normal - MblieStartSpin 進來... Count=0
+[2017-07-05 23:06:29.971] [INFO] normal - async.eachSeries
+[2017-07-05 23:06:29.972] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:06:29.972] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=8
+[2017-07-05 23:06:29.972] [INFO] normal - SqlQuery=SELECT * FROM member where UID=1 AND Account='cat111' AND PassWord='1234';
+[2017-07-05 23:06:29.973] [INFO] normal - MblieStartSpin 離開等待async結果...
+[2017-07-05 23:06:29.974] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=502810
+[2017-07-05 23:06:29.974] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
+[2017-07-05 23:06:29.975] [INFO] normal - ===SQL_StartSpinAndUpdateData UID=1
+[2017-07-05 23:06:29.978] [INFO] normal - ===SQL_StartSpinAndUpdateData Account=cat111
+[2017-07-05 23:06:29.978] [INFO] normal - ===SQL_StartSpinAndUpdateData PassWord=1234
+[2017-07-05 23:06:29.979] [INFO] normal - ===SQL_StartSpinAndUpdateData BetKindStr=[1,2,3,4,5,6,7,8,0]
+[2017-07-05 23:06:29.979] [INFO] normal - ===SQL_StartSpinAndUpdateData Game_Money=502810
+[2017-07-05 23:06:29.981] [INFO] normal - len=9
+[2017-07-05 23:06:29.981] [INFO] normal - RateTable len=9
+[2017-07-05 23:06:29.981] [INFO] normal - ###亂數=10 AwardTable=0
+[2017-07-05 23:06:29.981] [INFO] normal - BetKind[0]=1
+[2017-07-05 23:06:29.982] [INFO] normal - 有押注 該注為=1
+[2017-07-05 23:06:29.982] [INFO] normal - BetKind[1]=2
+[2017-07-05 23:06:29.982] [INFO] normal - 有押注 該注為=2
+[2017-07-05 23:06:29.982] [INFO] normal - BetKind[2]=3
+[2017-07-05 23:06:29.982] [INFO] normal - 有押注 該注為=3
+[2017-07-05 23:06:29.983] [INFO] normal - BetKind[3]=4
+[2017-07-05 23:06:29.983] [INFO] normal - 有押注 該注為=4
+[2017-07-05 23:06:29.983] [INFO] normal - BetKind[4]=5
+[2017-07-05 23:06:29.984] [INFO] normal - 有押注 該注為=5
+[2017-07-05 23:06:29.984] [INFO] normal - BetKind[5]=6
+[2017-07-05 23:06:29.985] [INFO] normal - 有押注 該注為=6
+[2017-07-05 23:06:29.985] [INFO] normal - BetKind[6]=7
+[2017-07-05 23:06:29.985] [INFO] normal - 有押注 該注為=7
+[2017-07-05 23:06:29.985] [INFO] normal - BetKind[7]=8
+[2017-07-05 23:06:29.986] [INFO] normal - 有押注 該注為=8
+[2017-07-05 23:06:29.986] [INFO] normal - BetKind[8]=0
+[2017-07-05 23:06:29.986] [INFO] normal - ###總押注 TotalBet=360
+[2017-07-05 23:06:29.987] [INFO] normal - ###總贏分Win_Money=10 Before_Game_Money=502810
+[2017-07-05 23:06:29.987] [INFO] normal - ###一般計算
+[2017-07-05 23:06:29.987] [INFO] normal - ###計算之後的金額 After_Game_Money=502460 此次輸贏了=-350
+[2017-07-05 23:06:29.988] [INFO] normal - SqlQuery data:update member set Game_Money=502460  where UID=1 AND Account="cat111" AND PassWord="1234" ;
+[2017-07-05 23:06:29.990] [INFO] normal - SQL_StartSpinAndUpdateData 資料成功 mysql return data:[object Object]
+[2017-07-05 23:06:29.990] [INFO] normal - ===SQL_GameLogInster Status=8
+[2017-07-05 23:06:29.991] [INFO] normal - ===SQL_GameLogInster rows=[object Object]
+[2017-07-05 23:06:29.991] [INFO] normal - ===SQL_GameLogInster Platform=1
+[2017-07-05 23:06:29.991] [INFO] normal - ===SQL_GameLogInster UID=1
+[2017-07-05 23:06:29.992] [INFO] normal - ===SQL_GameLogInster Name=劉智明1
+[2017-07-05 23:06:29.992] [INFO] normal - ===SQL_GameLogInster Account=cat111
+[2017-07-05 23:06:29.993] [INFO] normal - ===SQL_GameLogInster TotalBet=360
+[2017-07-05 23:06:29.993] [INFO] normal - ===SQL_GameLogInster Bet=360
+[2017-07-05 23:06:29.993] [INFO] normal - ===SQL_GameLogInster Before_Game_Money=502810
+[2017-07-05 23:06:29.994] [INFO] normal - ===SQL_GameLogInster After_Game_Money=502460
+[2017-07-05 23:06:29.994] [INFO] normal - ===SQL_GameLogInster Win_Money=10
+[2017-07-05 23:06:29.994] [INFO] normal - ===SQL_GameLogInster SpinResult=10
+[2017-07-05 23:06:29.995] [INFO] normal - SqlQuery data:{"Platform":1,"CreateTime":"2017-07-05T15:06:29.995Z","UID":1,"Name":"劉智明1","Account":"cat111","TotalBet":360,"Bet":360,"Before_Game_Money":502810,"After_Game_Money":502460,"Win_Money":10,"SpinResult":10}
+[2017-07-05 23:06:29.996] [INFO] normal - SQL_GameLogInster 寫入資料成功！
+[2017-07-05 23:06:29.996] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
+[2017-07-05 23:06:29.997] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:06:29.997] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=8
+[2017-07-05 23:06:29.997] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet row=[object Object]
+[2017-07-05 23:06:29.997] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet getData2=[object Object]
+[2017-07-05 23:06:29.998] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
+[2017-07-05 23:06:29.998] [INFO] normal - Result=[object Object]
+[2017-07-05 23:06:29.999] [INFO] normal - MblieStartSpin DTO_Response:{"Code":0,"Message":"成功完成StartSpin","UID":"1","Account":"cat111","Data":"","Game_Money":502460,"Result":1,"SpinResult":10,"TotalBet":360,"Win_Money":10}
+[2017-07-05 23:15:07.090] [INFO] normal - MblieAddCustomer 進來...
+[2017-07-05 23:15:07.093] [INFO] normal - UID=32
+[2017-07-05 23:15:07.093] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:15:07.094] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=9
+[2017-07-05 23:15:07.094] [INFO] normal - SqlQuery=SELECT * FROM member where Account='eagle3' AND PassWord='1234';
+[2017-07-05 23:15:07.095] [INFO] normal - MblieAddCustomer 離開等待async結果...
+[2017-07-05 23:15:07.097] [INFO] normal - 沒找到 結束步驟 Account:eagle3
+[2017-07-05 23:15:07.097] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet UID=32
+[2017-07-05 23:15:07.097] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=-5
+[2017-07-05 23:15:07.098] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:15:07.098] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=9
+[2017-07-05 23:15:07.098] [INFO] normal - ===AnalysisResult UID=32 Account=eagle3 err=-5
+[2017-07-05 23:15:07.099] [INFO] normal - Result=[object Object]
+[2017-07-05 23:15:07.100] [INFO] normal - MblieAddCustomer DTO_Response:{"Code":-5,"Message":"找不到會員","UID":"32","Account":"eagle3","Data":[]}
+[2017-07-05 23:16:12.320] [INFO] normal - MblieAddCustomer 進來...
+[2017-07-05 23:16:12.321] [INFO] normal - UID=1
+[2017-07-05 23:16:12.321] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:16:12.321] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=9
+[2017-07-05 23:16:12.322] [INFO] normal - SqlQuery=SELECT * FROM member where Account='eagle3' AND PassWord='1234';
+[2017-07-05 23:16:12.323] [INFO] normal - MblieAddCustomer 離開等待async結果...
+[2017-07-05 23:16:12.324] [INFO] normal - 沒找到 結束步驟 Account:eagle3
+[2017-07-05 23:16:12.324] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet UID=1
+[2017-07-05 23:16:12.324] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=-5
+[2017-07-05 23:16:12.325] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:16:12.325] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=9
+[2017-07-05 23:16:12.325] [INFO] normal - ===AnalysisResult UID=1 Account=eagle3 err=-5
+[2017-07-05 23:16:12.326] [INFO] normal - Result=[object Object]
+[2017-07-05 23:16:12.326] [INFO] normal - MblieAddCustomer DTO_Response:{"Code":-5,"Message":"找不到會員","UID":"1","Account":"eagle3","Data":[]}
+[2017-07-05 23:16:16.768] [INFO] normal - MblieAddCustomer 進來...
+[2017-07-05 23:16:16.768] [INFO] normal - UID=1
+[2017-07-05 23:16:16.769] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:16:16.769] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=9
+[2017-07-05 23:16:16.770] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
+[2017-07-05 23:16:16.771] [INFO] normal - MblieAddCustomer 離開等待async結果...
+[2017-07-05 23:16:16.772] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=502460
+[2017-07-05 23:16:16.773] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
+[2017-07-05 23:16:16.774] [INFO] normal - ===SQL_CustomerInfoInster Status=9
+[2017-07-05 23:16:16.774] [INFO] normal - ===SQL_CustomerInfoInster rows=[object Object]
+[2017-07-05 23:16:16.774] [INFO] normal - ===SQL_CustomerInfoInster UID=1
+[2017-07-05 23:16:16.774] [INFO] normal - ===SQL_CustomerInfoInster Name=劉智明1
+[2017-07-05 23:16:16.775] [INFO] normal - ===SQL_CustomerInfoInster CustomerName=王大明
+[2017-07-05 23:16:16.775] [INFO] normal - ===SQL_CustomerInfoInster CustomerAge=30
+[2017-07-05 23:16:16.776] [INFO] normal - ===SQL_CustomerInfoInster CustomerGender=F
+[2017-07-05 23:16:16.776] [INFO] normal - ===SQL_CustomerInfoInster CustomerIdentityNumber=F123456789
+[2017-07-05 23:16:16.776] [INFO] normal - ===SQL_CustomerInfoInster CustomerPhoneNumber=0955645161
+[2017-07-05 23:16:16.777] [INFO] normal - ===SQL_CustomerInfoInster CustomerAddress=田中間
+[2017-07-05 23:16:16.778] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomeAge=20
+[2017-07-05 23:16:16.778] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomeFootage=31.5
+[2017-07-05 23:16:16.778] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomePrice=610
+[2017-07-05 23:16:16.779] [INFO] normal - SqlQuery data:{"UID":1,"Name":"劉智明1","CreateTime":"2017-07-05T15:16:16.779Z","UpdateTime":"2017-07-05T15:16:16.779Z","CustomerName":"王大明","CustomerAge":"30","CustomerGender":"F","CustomerIdentityNumber":"F123456789","CustomerPhoneNumber":"0955645161","CustomerAddress":"田中間","CustomerHomeAge":"20","CustomerHomeFootage":"31.5","CustomerHomePrice":"610"}
+[2017-07-05 23:16:16.783] [INFO] normal - 寫入資料成功！
+[2017-07-05 23:16:16.783] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet UID=1
+[2017-07-05 23:16:16.783] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
+[2017-07-05 23:16:16.784] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:16:16.784] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=9
+[2017-07-05 23:16:16.784] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
+[2017-07-05 23:16:16.785] [INFO] normal - Result=[object Object]
+[2017-07-05 23:16:16.785] [INFO] normal - MblieAddCustomer DTO_Response:{"Code":0,"Message":"成功完成新增顧客","UID":"1","Account":"cat111","Data":0}
+[2017-07-05 23:16:18.625] [INFO] normal - MblieAddCustomer 進來...
+[2017-07-05 23:16:18.625] [INFO] normal - UID=1
+[2017-07-05 23:16:18.626] [INFO] normal - async.func1 傳遞參數用
+[2017-07-05 23:16:18.626] [INFO] normal - ===SQL_PlayerInfoAuth2 Status=9
+[2017-07-05 23:16:18.627] [INFO] normal - SqlQuery=SELECT * FROM member where Account='cat111' AND PassWord='1234';
+[2017-07-05 23:16:18.627] [INFO] normal - MblieAddCustomer 離開等待async結果...
+[2017-07-05 23:16:18.628] [INFO] normal - 有找到 i=0 Account=cat111PassWord=1234 Game_Money=502460
+[2017-07-05 23:16:18.629] [INFO] normal - 有找到 往下一個步驟去 Account=cat111
+[2017-07-05 23:16:18.630] [INFO] normal - ===SQL_CustomerInfoInster Status=9
+[2017-07-05 23:16:18.631] [INFO] normal - ===SQL_CustomerInfoInster rows=[object Object]
+[2017-07-05 23:16:18.631] [INFO] normal - ===SQL_CustomerInfoInster UID=1
+[2017-07-05 23:16:18.631] [INFO] normal - ===SQL_CustomerInfoInster Name=劉智明1
+[2017-07-05 23:16:18.632] [INFO] normal - ===SQL_CustomerInfoInster CustomerName=王大明
+[2017-07-05 23:16:18.632] [INFO] normal - ===SQL_CustomerInfoInster CustomerAge=30
+[2017-07-05 23:16:18.632] [INFO] normal - ===SQL_CustomerInfoInster CustomerGender=F
+[2017-07-05 23:16:18.632] [INFO] normal - ===SQL_CustomerInfoInster CustomerIdentityNumber=F123456789
+[2017-07-05 23:16:18.633] [INFO] normal - ===SQL_CustomerInfoInster CustomerPhoneNumber=0955645161
+[2017-07-05 23:16:18.633] [INFO] normal - ===SQL_CustomerInfoInster CustomerAddress=田中間
+[2017-07-05 23:16:18.633] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomeAge=20
+[2017-07-05 23:16:18.633] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomeFootage=31.5
+[2017-07-05 23:16:18.635] [INFO] normal - ===SQL_CustomerInfoInster CustomerHomePrice=610
+[2017-07-05 23:16:18.635] [INFO] normal - SqlQuery data:{"UID":1,"Name":"劉智明1","CreateTime":"2017-07-05T15:16:18.635Z","UpdateTime":"2017-07-05T15:16:18.635Z","CustomerName":"王大明","CustomerAge":"30","CustomerGender":"F","CustomerIdentityNumber":"F123456789","CustomerPhoneNumber":"0955645161","CustomerAddress":"田中間","CustomerHomeAge":"20","CustomerHomeFootage":"31.5","CustomerHomePrice":"610"}
+[2017-07-05 23:16:18.638] [INFO] normal - 寫入資料成功！
+[2017-07-05 23:16:18.638] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet UID=1
+[2017-07-05 23:16:18.639] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet err=0
+[2017-07-05 23:16:18.639] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet req2=[object Object]
+[2017-07-05 23:16:18.639] [INFO] normal - ====CallBackFunc_AnalysisAndDataGet Status=9
+[2017-07-05 23:16:18.639] [INFO] normal - ===AnalysisResult UID=1 Account=cat111 err=0
+[2017-07-05 23:16:18.640] [INFO] normal - Result=[object Object]
+[2017-07-05 23:16:18.640] [INFO] normal - MblieAddCustomer DTO_Response:{"Code":0,"Message":"成功完成新增顧客","UID":"1","Account":"cat111","Data":0}

@@ -22,6 +22,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -64,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        EzSharedPreferences.onCreate(this,TAG);
         EzNetWork.onCreate(this,TAG);
 
         // 抓uuid
@@ -101,19 +103,37 @@ public class LoginActivity extends AppCompatActivity {
                             try{
 
                                 // 登入中
-                                EzNetWork.Url =  "http://52.196.121.132:3000/";
+                                EzNetWork.Url =  "http://52.198.59.96:3000/";
                                 String ret = EzNetWork.SenCmd( NET_CMD.NET_CMD_LOGIN, "UID=1&Account=cat111&PassWord=1234");
                                 Log.d(TAG, "excutePost str=" + ret);
 
+                                // http://www.cnblogs.com/qianxudetianxia/archive/2011/07/22/2079979.html
                                 int Code = new JSONObject(ret).getInt("Code");
+                                String Account = new JSONObject(ret).getString("Account");
+                                String Data = new JSONObject(ret).getString("Data");
+                                JSONArray numberLis = new JSONObject(ret).getJSONArray("Data");
+
                                 if( Code == 0 )
                                 {
+                                    // 登入成功
+                                    //for(int i=0; i<numberLis.length(); i++){
+                                        int i = 0;
+                                        //获取数组中的数组
+                                        int UID = numberLis.getJSONObject(i).getInt("UID");
+                                        String Name = numberLis.getJSONObject(i).getString("Name");
+                                        String PassWord = numberLis.getJSONObject(i).getString("PassWord");
+
+                                        EzSharedPreferences.SaveData("Account", Account);
+                                        EzSharedPreferences.SaveData("Name", Name);
+                                        EzSharedPreferences.SaveData("UID", UID);
+                                    //}
+
                                     Message msg = new Message();
                                     msg.what = 1;
                                     mHandler.sendMessage(msg);
                                 }
                                 else
-                                {
+                                {// 登入失敗
                                     Message msg = new Message();
                                     msg.what = 0;
                                     mHandler.sendMessage(msg);

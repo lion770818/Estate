@@ -37,7 +37,7 @@ public class MainMenu extends AppCompatActivity {
     // http://www.bkjia.com/Androidjc/1100111.html
     // http://dean-android.blogspot.tw/2015/01/androidfragmenttabactivitytab.html
     // http://givemepass.blogspot.tw/2016/07/viewpager.html
-
+    static String TAG = "MainMenu";
     private TabLayout mTablayout;
     private ViewPager mViewPager;
     private List<PageView> pageList;
@@ -56,6 +56,14 @@ public class MainMenu extends AppCompatActivity {
         pageList.add(new PageOne(MainMenu.this));
         pageList.add(new PageTwo(MainMenu.this));
         pageList.add(new PageThree(MainMenu.this));
+
+        EzSharedPreferences.onCreate(this,TAG);
+        EzNetWork.onCreate(this,TAG);
+
+
+        String Account = EzSharedPreferences.readDataString("Account");
+        String Name = EzSharedPreferences.readDataString("Name");
+        int UID = EzSharedPreferences.readDataInt("UID");
     }
 
     private void initView() {

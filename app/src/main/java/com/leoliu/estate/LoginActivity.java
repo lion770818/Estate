@@ -110,11 +110,13 @@ public class LoginActivity extends AppCompatActivity {
                                 // http://www.cnblogs.com/qianxudetianxia/archive/2011/07/22/2079979.html
                                 int Code = new JSONObject(ret).getInt("Code");
                                 String Account = new JSONObject(ret).getString("Account");
-                                String Data = new JSONObject(ret).getString("Data");
-                                JSONArray numberLis = new JSONObject(ret).getJSONArray("Data");
 
+                                Log.d(TAG, "excutePost Code=" + Code);
                                 if( Code == 0 )
                                 {
+                                    Log.d(TAG, "excutePost 登入成功"  );
+                                    String Data = new JSONObject(ret).getString("Data");
+                                    JSONArray numberLis = new JSONObject(ret).getJSONArray("Data");
                                     // 登入成功
                                     //for(int i=0; i<numberLis.length(); i++){
                                         int i = 0;
@@ -203,7 +205,7 @@ public class LoginActivity extends AppCompatActivity {
             Log.d(TAG, "handleMessage msg=" + msg);
             switch(msg.what){
                 case 0:
-
+                    GotoMainMenu();
                     setAlertDialog1Event("登入錯誤");
                     break;
                 case 1:

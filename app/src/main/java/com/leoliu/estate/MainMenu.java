@@ -12,6 +12,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
@@ -68,9 +69,21 @@ public class MainMenu extends AppCompatActivity {
 
     private void initView() {
         mTablayout = (TabLayout) findViewById(R.id.tabs);
-        mTablayout.addTab(mTablayout.newTab().setText("輸入會員資料"));
+        //mTablayout.addTab(mTablayout.newTab().setText("輸入會員資料"));
+        TabLayout.Tab tab = mTablayout.newTab();
+        tab.setText("輸入會員資料");
+        tab.setTag(0);
+        tab.setIcon( R.drawable.notebook );
+        mTablayout.addTab( tab );
+
         mTablayout.addTab(mTablayout.newTab().setText("5蝦咪好看"));
-        mTablayout.addTab(mTablayout.newTab().setText("翊起運動"));
+        //mTablayout.addTab(mTablayout.newTab().setText("翊起運動"));
+
+        TabLayout.Tab tab2 = mTablayout.newTab();
+        tab2.setText("5蝦咪好看");
+        tab2.setTag(2);
+        tab2.setIcon( R.drawable.home );
+        mTablayout.addTab( tab2 );
 
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mViewPager.setAdapter(new SamplePagerAdapter());
@@ -81,6 +94,8 @@ public class MainMenu extends AppCompatActivity {
         mTablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                Log.d(TAG,"被選擇到 =" + tab.getTag());
+                mViewPager.setBackgroundResource(R.drawable.selector_tab_background);
                 mViewPager.setCurrentItem(tab.getPosition());
             }
 
